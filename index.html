@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продам абсолютную энтропию</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/accordion.css ">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <button class="btn_meny" id="btnmeny">Меню</button>
+            <nav class="nav" id="meny">
+                <ul class="nav_list">
+                    <li class="nav_item">Вход</li>
+                    <li class="nav_item">Регистрация</li>
+                    <li class="nav_item">Акции</li>
+                    <li class="nav_item">Корзина</li>
+                    <li class="nav_item">
+                        <div class="white" onclick="white()"></div>
+                    </li>
+                    <li class="nav_item">
+                        <div class="black" onclick="black()"></div>
+                    </li>
+                </ul>
+                <button class="burger" onclick="burger_click()">
+                    <img src="img/Image20230802121641.png" alt="" class="burger_img">
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="clock">
+            <div class="container container_clock">
+                <div class="current_time" id="time"></div>
+            </div>
+        </section>
+        <section class="shop">
+            <div class="container">
+                <h1 class="shop_title">Продам энтропию</h1>
+                <img src="img/slide-2.jpg" alt="" class="shop_img">
+                <div class="itc-slider" data-slider="itc-slider">
+                    <div class="itc-slider-wrapper">
+                        <div class="itc-slider-items">
+                            <div class="itc-slider-item">
+                                <img src="img/image-18.jpg" alt="" class="shop_img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/prostye-prichiny-neizbejnosti-tehnicheskogo-dolga-2.png" alt=""
+                                    class="shop_img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/image-9.jpg" alt="" class="shop_img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                    <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                    <button class="itc-slider-btn itc-slider-btn-next"></button>
+                </div>
+                <div class="accordion" id="accordion_1">
+                    <div class="accordion__item">
+                        <h2 class="accordion__header">О товаре</h2>
+                        <div class="accordion__body">
+                            <p class="shop_text">Энтропи́я (от др.-греч. ἐν «в» + τροπή «обращение; превращение») —
+                                широко используемый
+                                в естественных и точных науках термин (впервые введён в рамках термодинамики как функция
+                                состояния
+                                термодинамической системы), обозначающий меру необратимого рассеивания энергии или
+                                бесполезности энергии
+                                (потому что не всю энергию системы можно использовать для превращения в какую-нибудь
+                                полезную работу).
+                                Для понятия энтропии в данном разделе физики используют название термодинамическая
+                                энтропия;
+                                термодинамическая энтропия обычно применяется для описания равновесных (обратимых)
+                                процессов.</p>
+
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h2 class="accordion__header">Цена</h2>
+                        <div class="accordion__body">
+                            <h3 class="shop_title">Цена</h3>
+                            <p class="shop_price">Вся вселенная</p>
+                            <button class="shop_btm" onclick="buy()" id="btn">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="video">
+            <video id="Myvideo" autoplay muted loop>
+                <source src="video/video.mp4" type="video/mp4">
+            </video>
+            <div class="video_content">
+                <div class="container">
+                    <h1 class="video_title jt">Заголовок</h1>
+                    <p class="video_text jt">Описание</p>
+                </div>
+            </div>
+        </section>
+        <section class="maps">
+            <div class="container">
+                <h2 class="map_title">Точка самовывоза</h2>
+                <div class="google">
+                    <h2 class="google_map">Google карта</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9572.992108628374!2d28.034573343598378!3d53.14164310568882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d9dcfb1c64bbe3%3A0x84c472c3913e25bf!2zUG9kb3JlcydlLCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2sru!4v1690621327285!5m2!1sru!2sru"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="yandex">
+                    <h2 class="yandex_map">Yandex карта</h2>
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Abab81bdc1b46a77860bda20c437c088813f94c08e266149321d981e5ea26b261&amp;source=constructor"
+                        width="100%" height="400" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="clock">
+            <div class="container container_clock">
+                <div class="corent_time" id="time"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container container_footer">
+            <p class="footer_text">&copy; Ухачёв В. В. 8-В класс</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/meny.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/time.js"></script>
+</body>
+
+</html>
